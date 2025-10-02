@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn { 0% { opacity: 0; transform: scale(0.95); } 100% { opacity: 1; transform: scale(1); } }
+.fade-in-result { animation: fadeIn 0.5s ease-in-out; }
+.ring-rainbow { box-shadow: 0 0 20px rgba(255,0,0,0.5), 0 0 30px rgba(255,165,0,0.5), 0 0 40px rgba(0,255,0,0.5), 0 0 50px rgba(0,0,255,0.5); }
+@keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(180deg); } }
+.animate-float { animation: float 6s ease-in-out infinite; }
+.delay-1000 { animation-delay: 1s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-3000 { animation-delay: 3s; }
